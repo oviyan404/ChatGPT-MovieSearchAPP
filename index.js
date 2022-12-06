@@ -72,7 +72,7 @@ function searchMovies(event) {
   
       // Make the API call to search for movies
       axios
-        .get('http://www.omdbapi.com/', {
+        .get('https://www.omdbapi.com/', {
           params: {
             apikey: '9969b9ec',
             s: query
@@ -113,7 +113,7 @@ function showMovieDetails() {
   
       // Make the API call to get the detailed movie information
       axios
-        .get('http://www.omdbapi.com/', {
+        .get('https://www.omdbapi.com/', {
           params: {
             apikey: '9969b9ec',
             i: selectedMovie
